@@ -3,6 +3,7 @@ const cors = require('cors');
 const pool = require('./models/db');
 const authRoutes = require('./routes/auth');
 const campaignRoutes = require('./routes/campaigns');
+const predictRoutes = require('./routes/predict');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -15,6 +16,7 @@ app.use(express.json());
 // Auth routes
 app.use('/api/auth', authRoutes);
 app.use('/api/campaigns', campaignRoutes);
+app.use('/api/predict', predictRoutes);
 
 const fallbackInfluencers = [
   { id: 1, name: 'FoodieKL', followers: 120000, niche: 'F&B', engagementRate: 8.2 },

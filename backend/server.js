@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const pool = require('./models/db');
+const authRoutes = require('./routes/auth');
+const campaignRoutes = require('./routes/campaigns');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -9,6 +11,10 @@ console.log('DATABASE_URL configured:', Boolean(process.env.DATABASE_URL));
 
 app.use(cors());
 app.use(express.json());
+
+// Auth routes
+app.use('/api/auth', authRoutes);
+app.use('/api/campaigns', campaignRoutes);
 
 const fallbackInfluencers = [
   { id: 1, name: 'FoodieKL', followers: 120000, niche: 'F&B', engagementRate: 8.2 },

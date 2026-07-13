@@ -10,3 +10,12 @@ services:
         value: postgresql://backend_r95t_user:VoINh0mdA6y5092FPuqzPjEfobvCg9rb@dpg-d98aska8qa3s73f6lhdg-a.singapore-postgres.render.com/backend_r95t
       - key: NODE_ENV
         value: production
+
+  - type: static
+    name: terra-ser-frontend
+    rootDir: frontend
+    buildCommand: npm run build
+    staticPublishPath: build
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://terra-ser-influence-intelligence-1.onrender.com

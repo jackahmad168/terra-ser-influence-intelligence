@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/terra-ser-influence-intelligence/static/css/main.d056afac.css",
+    "main.js": "/terra-ser-influence-intelligence/static/js/main.18a2961d.js",
+    "static/js/453.20359781.chunk.js": "/terra-ser-influence-intelligence/static/js/453.20359781.chunk.js",
+    "index.html": "/terra-ser-influence-intelligence/index.html",
+    "main.d056afac.css.map": "/terra-ser-influence-intelligence/static/css/main.d056afac.css.map",
+    "main.18a2961d.js.map": "/terra-ser-influence-intelligence/static/js/main.18a2961d.js.map",
+    "453.20359781.chunk.js.map": "/terra-ser-influence-intelligence/static/js/453.20359781.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d056afac.css",
+    "static/js/main.18a2961d.js"
+  ]
+}
